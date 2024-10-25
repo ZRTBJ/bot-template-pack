@@ -23,7 +23,7 @@ const TapBotTemplate = () => {
         </div>
         <div className="flex flex-col gap-4 justify-between">
           <img src={ScreenImage} alt="Screen Card" className="w-fit" />
-          <div className="flex gap-2 ">
+          <div className="flex gap-2 justify-between">
             <img src={SilverStarIcon} alt="Silver Star" className="w-[40px]" />
             <img src={PieIcon} alt="Pie" className="w-[40px]" />
             <img src={GoldStarIcon} alt="Gold Star" className="w-[40px]" />
@@ -31,16 +31,16 @@ const TapBotTemplate = () => {
           {/* <div className="grid grid-cols-5"></div> */}
           <img src={IconsImage} alt="Icons Image" className="w-fit" />
           <div className="grid grid-cols-2 gap-2">
-            <button className="bg-white text-black px-4 py-2 rounded-md w-full text-[10px]">
+            <button className="bg-white text-black px-4 py-1 rounded-md w-full text-[10px]">
               button
             </button>
-            <button className="bg-lime-500 text-black px-4 py-2 rounded-md w-full text-[10px]">
+            <button className="bg-lime-500 text-black px-4 py-1 rounded-md w-full text-[10px]">
               button
             </button>
-            <button className="bg-white text-black px-4 py-2 rounded-md w-full text-[10px]">
+            <button className="bg-white text-black px-4 py-1 rounded-md w-full text-[10px]">
               button
             </button>
-            <button className="bg-lime-500 text-black px-4 py-2 rounded-md w-full text-[10px]">
+            <button className="bg-lime-500 text-black px-4 py-1 rounded-md w-full text-[10px]">
               button
             </button>
           </div>
