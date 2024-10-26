@@ -39,23 +39,25 @@ const PurcahseModal = ({ isOpen, onClose }) => {
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center mb-8 bg-[#0E0E0F] rounded-xl p-4 justify-between gap-4">
-          <div className="flex items-start">
+        <div className="flex sm:flex-row items-center mb-8 bg-[#0E0E0F] rounded-xl p-4 justify-between gap-4">
+          <div className="flex items-center">
             <img
               src={Silver}
               alt="Bot template pack"
               className="w-24 h-24 mr-4"
             />
             <div className="flex-grow">
-              <h3 className="text-lg font-semibold">Bot template pack</h3>
-              <p className="text-sm text-gray-400 mb-1">
+              <h3 className="text-[1.25rem] ss:text-[1rem]">
+                Bot template pack
+              </h3>
+              <p className="text-[0.875rem] ss:text-[0.625rem] text-gray-400 mb-1">
                 Минималистичный дизайн шаблона для тап-бота с готовым
                 тематическим UI-kit, компонентами и экр...
               </p>
             </div>
           </div>
 
-          <p className="font-bold">$100</p>
+          <p className="font-bold text-[1.25rem] ss:text-[1rem]">$100</p>
         </div>
 
         <div className="mb-4">
