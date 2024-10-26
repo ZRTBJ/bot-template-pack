@@ -1,25 +1,18 @@
 import React from "react";
-import Header from "./components/Header";
-import TapBotTemplate from "./components/TapBotTemplate";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+import Layout from "./Layout";
+import TapBot from "./pages/TapBot";
 
 function App() {
   return (
-    <div className="bg-black min-h-screen flex flex-col">
-      {/* Header */}
-      <Header />
-
-      {/* Main Content */}
-      <div className="flex-grow flex flex-col items-center justify-center space-y-8">
-        {/* h1 Heading */}
-        <h1 className="text-white text-3xl font-bold text-center">
-          Launch-ready Projects
-        </h1>
-
-        {/* TemplateCard Component */}
-        <TapBotTemplate />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<TapBot />}></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

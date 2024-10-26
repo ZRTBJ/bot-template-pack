@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BalanceImage from "../assets/balance.png";
 import ScreenImage from "../assets/screen.png";
 import IconsImage from "../assets/icons.png";
@@ -10,7 +10,14 @@ import SilverStarIcon from "../assets/silverstar.svg";
 import PieIcon from "../assets/pie.svg";
 import GoldStarIcon from "../assets/goldstar.svg";
 
+import PurcahseModal from "./PurchaseModal";
+
 const TapBotTemplate = () => {
+  const [isOpen, setModalOpen] = useState(false);
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+
   return (
     <div className="flex bg-[#222222] rounded-2xl max-w-4xl">
       {/* Left Side - Image */}
@@ -21,7 +28,7 @@ const TapBotTemplate = () => {
           <img src={PurchageImage} alt="Purchase" />
           <img src={MultiTap} alt="Multi Tap" />
         </div>
-        <div className="flex flex-col gap-4 justify-between">
+        <div className="flex flex-col justify-between">
           <img src={ScreenImage} alt="Screen Card" className="w-fit" />
           <div className="flex gap-2 justify-between">
             <img src={SilverStarIcon} alt="Silver Star" className="w-[40px]" />
@@ -29,8 +36,8 @@ const TapBotTemplate = () => {
             <img src={GoldStarIcon} alt="Gold Star" className="w-[40px]" />
           </div>
           {/* <div className="grid grid-cols-5"></div> */}
-          <img src={IconsImage} alt="Icons Image" className="w-fit" />
-          <div className="grid grid-cols-2 gap-2">
+          <img src={IconsImage} alt="Icons Image" className="h-fit" />
+          <div className="grid grid-cols-2 gap-2 p-2">
             <button className="bg-white text-black px-4 py-1 rounded-md w-full text-[10px]">
               button
             </button>
@@ -94,11 +101,15 @@ const TapBotTemplate = () => {
           </div>
 
           {/* Button */}
-          <button className="bg-lime-400 text-black font-bold py-3 px-12 rounded-lg hover:bg-lime-500 transition duration-300">
+          <button
+            onClick={openModal}
+            className="bg-lime-400 text-black font-bold py-3 px-12 rounded-lg hover:bg-lime-500 transition duration-300"
+          >
             GET IT
           </button>
         </div>
       </div>
+      <PurcahseModal isOpen={isOpen} onClose={closeModal}></PurcahseModal>
     </div>
   );
 };
