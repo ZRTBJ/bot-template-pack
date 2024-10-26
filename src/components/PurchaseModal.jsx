@@ -39,7 +39,7 @@ const PurcahseModal = ({ isOpen, onClose }) => {
           </p>
         </div>
 
-        <div className="flex items-center mb-8 bg-[#0E0E0F] rounded-xl p-4 justify-between gap-4">
+        <div className="flex flex-col sm:flex-row items-center mb-8 bg-[#0E0E0F] rounded-xl p-4 justify-between gap-4">
           <div className="flex items-start">
             <img
               src={Silver}
