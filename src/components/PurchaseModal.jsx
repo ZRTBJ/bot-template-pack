@@ -43,16 +43,16 @@ const PurcahseModal = ({ isOpen, onClose }) => {
           <div className="flex items-center">
             <img
               src={Silver}
-              alt="Bot template pack"
+              alt="Tap2Earn Template"
               className="w-24 h-24 mr-4"
             />
             <div className="flex-grow">
               <h3 className="text-[1.25rem] ss:text-[1rem]">
-                Bot template pack
+                Tap2Earn Template
               </h3>
-              <p className="text-[0.875rem] ss:text-[0.625rem] text-gray-400 mb-1">
-                Минималистичный дизайн шаблона для тап-бота с готовым
-                тематическим UI-kit, компонентами и экр...
+              <p className="text-[1rem] ss:text-[0.625rem] text-gray-400 mb-1">
+                Готовая Тапалка с возможностью кастомизаций и бесплатной
+                установкой на ваши сервера
               </p>
             </div>
           </div>
