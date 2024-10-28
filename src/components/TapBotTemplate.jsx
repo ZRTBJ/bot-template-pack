@@ -20,12 +20,15 @@ const TapBotTemplate = () => {
   const closeModal = () => setModalOpen(false);
 
   return (
-    <div className="flex flex-col lg:flex-row bg-[#222222] rounded-2xl max-w-4xl mx-auto justify-between">
+    <div className="flex flex-col lg:flex-row bg-[#222222] rounded-2xl max-w-4xl mx-auto justify-between overflow-hidden">
       {/* Left Side - Image */}
-      <img
-        src={PhonePanel}
-        className="max-w-80 h-auto aspect-square rounded-tl-2xl rounded-bl-2xl"
-      />
+      <div className="lg:w-2/5">
+        <img
+          src={PhonePanel}
+          className="lg:max-w-80 h-auto lg:h-full aspect-square rounded-tl-2xl rounded-bl-2xl"
+        />
+      </div>
+
       {
         // <div className="bg-[#2F2F2F] grid grid-cols-2 auto-rows-fr gap-4 w-full lg:w-2/5 p-4 sm:p-6 lg:p-8 rounded-tl-2xl rounded-bl-2xl">
         //   {/* Balance Card */}
