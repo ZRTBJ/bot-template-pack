@@ -13,15 +13,6 @@ const PurcahseModal = ({ isOpen, onClose }) => {
     console.log("Payment continued with:", { telegramUsername, email });
   };
   return (
-    // <div className="flex flex-col items-center rounded-xl p-2">
-    //   <div>
-    //     <h1>Purchase information</h1>
-    //     <p>Input your contacts to get the pack</p>
-    //   </div>
-    //   <div className="rounded-xl bg-[#0E0E0F]"></div>
-    //   <div></div>
-    //   <div></div>
-    // </div>
     <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
       <div className="bg-[#151515] rounded-lg p-8 text-white max-w-xl w-full shadow-lg relative">
         <button
